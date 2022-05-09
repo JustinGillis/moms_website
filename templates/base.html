@@ -5,16 +5,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %} {% endblock %}</title>
+    <title>{% block title %}{% endblock %}</title>
 </head>
 
 <body>
     <div class="menu-bar">
 
         <div class="logo header">
-            <a href="{{ url_for('home') }}"><img src="" alt="Medicare with Lynn's Logo"></a>
+            <a href="{{ url_for('home') }}">
+                <h1>Medicare With Lynn</h1>
+            </a>
         </div>
-        
+
         <div class="about header">
             <a href="{{ url_for('about') }}"><button>About</button></a>
         </div>
@@ -27,15 +29,15 @@
             <a href="{{ url_for('contact') }}"><button>Contact</button></a>
         </div>
 
-        <di v class="call-me-button header">
+        <div class="call-me-button header">
             <button>Call Me</button>
+            <!-- TODO add code to dial phone number if on device that can make a phone call -->
         </div>
 
     </div>
 
     <div class="content">
-        {% block content %}
-        {% endblock %}
+        {% block content %}{% endblock %}
     </div>
 
 </body>
