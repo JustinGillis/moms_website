@@ -12,11 +12,11 @@ def about():
     return render_template('about.html')
 
 @app.route('/appointment')
-def about():
+def appointment():
     return render_template('appointment.html')
 
 @app.route('/contact')
-def about():
+def contact():
     return render_template('contact.html')
 
 
