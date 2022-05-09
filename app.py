@@ -4,7 +4,7 @@ from flask import Flask, render_template, redirect, url_for
 app = Flask(__name__)
 
 @app.route('/')
-def landing():
+def home():
     return render_template('landing.html')
 
 @app.route('/about')
@@ -18,7 +18,6 @@ def appointment():
 @app.route('/contact')
 def contact():
     return render_template('contact.html')
-
 
 
 
