@@ -1,6 +1,26 @@
 {% extends 'base.html' %}
 
+<h1>{% block title %} Contact Page {% endblock %}</h1>
+
 {% block content %}
-    <h1>{% block title %} Contact Page {% endblock %}</h1>
-    <p>contact page </p>
+
+<div class="contact-message">
+    <form>
+        <div class="form-group">
+            <label for="inputEmail">Email address</label>
+            <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+            <label for="inputName">Email address</label>
+            <input class="form-control form-control-lg" id="inputName" type="text" placeholder="Your Name">
+        </div>
+        <div class="form-group">
+            <label for="inputMessage">Your Message</label>
+            <textarea class="form-control" id="inputMessage" rows="10"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send</button>
+    </form>
+</div>
+
 {% endblock %}
