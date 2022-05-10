@@ -3,21 +3,23 @@
 <h1>{% block title %} Contact Page {% endblock %}</h1>
 
 {% block content %}
-
-<div class="contact-message">
+<div class="container">
+    <h2>Send me a message</h2>
+</div>
+<div class="contact-message-form container">
     <form>
         <div class="form-group">
-            <label for="inputEmail">Email address</label>
-            <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp">
-            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            <label for="inputEmail">Email</label>
+            <input type="email" class="form-control form-control-lg" placeholder="Your Email Address" id="inputEmail" aria-describedby="emailHelp">
+            <small id="emailHelp" class="form-text text-muted">Your email will never be shared with anyone else.</small>
         </div>
         <div class="form-group">
-            <label for="inputName">Email address</label>
+            <label for="inputName">Name</label>
             <input class="form-control form-control-lg" id="inputName" type="text" placeholder="Your Name">
         </div>
         <div class="form-group">
-            <label for="inputMessage">Your Message</label>
-            <textarea class="form-control" id="inputMessage" rows="10"></textarea>
+            <label for="inputMessage">Message</label>
+            <textarea class="form-control form-control-lg" id="inputMessage" placeholder="Your Message" rows="7"></textarea>
         </div>
         <button type="submit" class="btn btn-primary">Send</button>
     </form>
