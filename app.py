@@ -11,13 +11,27 @@ def home():
 def about():
     return render_template('about.html')
 
-@app.route('/appointment')
-def appointment():
-    return render_template('appointment.html')
 
 @app.route('/contact')
 def contact():
     return render_template('contact.html')
+
+
+@app.route('/appointments/schedule')
+def schedule():
+    return render_template('schedule.html')
+
+
+@app.route('/appointments/re-schedule')
+def reschedule():
+    return render_template('re-schedule.html')
+
+
+@app.route('/appointments/cancel')
+def cancel():
+    return render_template('cancel.html')
+
+
 
 
 

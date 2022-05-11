@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
         integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 
-    <title>{% block title %}{% endblock %}</title>
+    <title>{% block title %}{% endblock %} - Medicare With Lynn</title>
 </head>
 
 <body>
@@ -41,9 +41,9 @@
                             Online Appointments
                         </a>
                         <div class="dropdown-menu" aria-labelledby="appointment-dropdown">
-                            <a class="dropdown-item" href="{{ url_for('appointment') }}">Make an appointment</a>
-                            <a class="dropdown-item" href="#">Reschedule you appointment</a>
-                            <a class="dropdown-item" href="#">Cancel your appointment</a>
+                            <a class="dropdown-item" href="{{ url_for('schedule') }}">Make an appointment</a>
+                            <a class="dropdown-item" href="{{ url_for('reschedule') }}">Reschedule you appointment</a>
+                            <a class="dropdown-item" href="{{ url_for('cancel') }}">Cancel your appointment</a>
                         </div>
                     </li>
                 </ul>
