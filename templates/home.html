@@ -5,17 +5,21 @@
 
 
 {% block content %}
+<div class="container">
+    <div class="container">
+        <img src="{{url_for('static',filename = 'images/supplimental_insurance_clipboard.jpeg')}}" alt=""
+            class="img-fluid">
+    </div>
 
-<!-- image -->
-<div class="home-img">
-    <img src="lynn-dave-other-pic.webp" alt="photograph of David Ford, Lynn Ford, and Thomas A. Sutton">
+    <div class="container">
+        <img src="{{url_for('static',filename = 'images/what_is_a_medicare_suppliment.png')}}" alt="" class="img-fluid">
+    </div>
+
+    <div class="container">
+        <img src="{{url_for('static',filename = 'images/medigap_vs_supplimental_insurance.png')}}" alt=""
+            class="img-fluid">
+    </div>
 </div>
-<!-- lynn commendation -->
 
-<!-- coverage calculator -->
-
-<!-- ??? -->
-
-<!-- ??? -->
 
 {% endblock %}
